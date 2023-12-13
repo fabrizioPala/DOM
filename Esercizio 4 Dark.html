@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+/*Crea uno script che: Al click del bottone inserisca la modalità <dark></dark>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +11,6 @@
         color: white;
       }
     </style>
-
   </head>
   <body>
     <h1>Dark Mode</h1>
@@ -18,9 +18,17 @@
       <button class="btn">Dark Mode</button>
     </div>
     <script>
-        let btn= document.querySelector(".btn")
-        let body= document.querySelector("body")
-        btn.addEventListener("click",()=>body.classList.toggle("theme"))
+      let btn = document.querySelector(".btn");
+      let body = document.querySelector("body");
+      btn.addEventListener("click", () => {
+        body.classList.toggle("theme");
+
+        if (body.classList.contains("theme")) {
+          btn.innerText = "LightMode";
+        } else {
+          btn.innerText = "Dark Mode";
+        }
+      });
     </script>
   </body>
 </html>
