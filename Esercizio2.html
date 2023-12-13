@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        const ul = document.querySelector("ul");
+        
+        const parentElement = ul.parentElement;
+        console.log(parentElement);
+
+        const secondChild = ul.children[1];
+        console.log(secondChild);
+
+        const nextSibling = secondChild.nextElementSibling;
+        console.log(nextSibling);
+
+        const previousSibling = secondChild.previousElementSibling;
+        console.log(previousSibling);
+    </script>
+</body>
+
+</html>
